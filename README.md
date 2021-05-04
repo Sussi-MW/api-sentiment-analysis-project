@@ -34,15 +34,15 @@ Test platform for API development: Postman
 
     - src.functions.py: file with the code of functions used for the Endpoints.
 
-####Endpoints:
-(POST)   /Create route that allows including data
-(GET)    /Create a route that allows you to list all documents
-(GET)    /Create a route that allows listing a single document (the first of all)
-(GET)    /Create a route that allows you to list all movie
-(GET)    /Create a route that allows you to list all characters
-(GET)    /Create a path that allows the sentiment analysis of a dialogue
-(DELETE) /Create a route that allows you to delete document
-(PUT)    /Create a route to update documents
+#### Endpoints:
+-(POST)   /Create route that allows including data
+-(GET)    /Create a route that allows you to list all documents
+-(GET)    /Create a route that allows listing a single document (the first of all)
+-(GET)    /Create a route that allows you to list all movie
+-(GET)    /Create a route that allows you to list all characters
+-(GET)    /Create a path that allows the sentiment analysis of a dialogue
+-(DELETE) /Create a route that allows you to delete document
+-(PUT)    /Create a route to update documents
 
 
 ### Sentiment analysis
@@ -73,18 +73,18 @@ Test platform for API development: Postman
 ---
 ## Dependencies used
 
-click==7.1.2
-Flask==1.1.2
-Flask-PyMongo==2.3.0
-itsdangerous==1.1.0
-Jinja2==2.11.3
-joblib==1.0.1
-MarkupSafe==1.1.1
-nltk==3.6.2
-pymongo==3.11.3
-regex==2021.4.4
-tqdm==4.60.0
-Werkzeug==1.0.1
+-click==7.1.2
+-Flask==1.1.2
+-Flask-PyMongo==2.3.0
+-itsdangerous==1.1.0
+-Jinja2==2.11.3
+-joblib==1.0.1
+-MarkupSafe==1.1.1
+-nltk==3.6.2
+-pymongo==3.11.3
+-regex==2021.4.4
+-tqdm==4.60.0
+-Werkzeug==1.0.1
 
 ---
 ## Resources used
