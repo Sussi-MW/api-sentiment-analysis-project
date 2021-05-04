@@ -16,13 +16,15 @@ Test platform for API development: Postman
 
 - (POST)   /Create route that allows including data
 
+```bash
 Receiving data:
 {
     "char": "PIPPIN",
     "dialog": "Hmm?",
     "movie": "The Return of the King"
 }
-
+```
+```bash
 Returns:
 {
     "_id": "60912043fb4e084738fa0ccc",
@@ -30,11 +32,14 @@ Returns:
     "dialog": "Hmm?",
     "movie": "The Return of the King"
 }
+```
 
 - (GET)    /Create a route that allows you to list all documents
 
+```bash
 http://localhost:5001/lotr_characters
-
+```
+```bash
 Returns:
 [
     {
@@ -54,13 +59,14 @@ Returns:
         "movie": "The Return of the King"
     },
  ...]
- 
+ ```
 
 - (GET)    /Create a route that allows listing a single document (the first of all)
 
-
+```bash
 http://localhost:5001/lotr_characters/608f327603dc552820c2da45
-
+```
+```bash
 Returns: 
 {
     "_id": {
@@ -70,12 +76,14 @@ Returns:
     "dialog": "My precious.",
     "movie": "The Return of the King"
 }
-
+```
 
 - (GET)    /Create a route that allows you to list all movie
 
+```bash
 http://localhost:5001/lotr_characters/movie/The Two Towers
-
+```
+```bash
 Returns: 
 [
     {
@@ -96,11 +104,14 @@ Returns:
     },
 
 ...]
+```
 
 - (GET)    /Create a route that allows you to list all characters
 
+```bash
 http://localhost:5001/lotr_characters/char/ARWEN
-
+```
+```bash
 Returns: 
 [
     {
@@ -119,13 +130,16 @@ Returns:
         "dialog": "I have made my choice.",
         "movie": "The Two Towers"
     },
-   
+
 ...]
+```
 
 - (GET)    /Create a path that allows the sentiment analysis of a dialogue
 
+```bash
 http://localhost:5001/lotr_characters/sa/608f327603dc552820c2da49
-
+```
+```bash
 Returns: 
 {
     "dialog": "Gollum' Gollum' Gollum' , and we wept precious. We wept to be so alone.",
@@ -136,18 +150,23 @@ Returns:
         "compound": -0.6015
     }
 }
+```
 
 - (DELETE) /Create a route that allows you to delete document
 
+```bash
 http://localhost:5001/lotr_characters/608f327603dc552820c2da74
-
+```
+```bash
 Returns: 
 {
     "message": "Document 608f327603dc552820c2da74 was deleted successfully"
 }
+```
 
 - (PUT)    /Create a route to update documents
 
+```bash
 http://localhost:5001/lotr_characters/608f327603dc552820c2da3f
 
 Receiving data
@@ -155,10 +174,11 @@ Receiving data
     "char": "SMEAGOL",
     "dialog": "Deagol! Deagol!",
     "movie": "The Return of the King"
-
 }
-
+```
+```bash
 Returns: 
 {
     "massage": "Document 608f327603dc552820c2da3f was updated successfully"
 }
+```
